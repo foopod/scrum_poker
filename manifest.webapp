@@ -1,5 +1,6 @@
 {
   "name": "Scrum Poker",
+  "version": "0.1"
   "description": "Used in Sprint Planning to estimate time/complexity of a story or task.",
   "launch_path": "/index.html",
   "developer": {
@@ -12,5 +13,6 @@
     "60": "/assets/icons/icon60.png",
     "30": "/assets/icons/icon30.png"
   },
-  "orientation": "portrait-primary"
+  "orientation": "portrait"
+  "fullscreen": "true"
 }
