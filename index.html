@@ -5,60 +5,41 @@
     <meta http-equiv="pragma" content="no-cache" />
     <title>Scrum Poker</title>
 
-    <link rel="stylesheet" type="text/css" href="style/style.css"/>
-    <script defer type="application/javascript" src="js/pocket-kitten.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/scrum_poker.css"/>
+    <script defer type="application/javascript" src="js/scrum_poker.js"></script>
   </head>
   <body role="application">
-    <div class="section group">
-      <div class="col span_1_of_3 ">
-        <div class="card_button">
-          1
-        </div>
-      </div>
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          2
-        </div>
-      </div>
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          3
-        </div>
-      </div>
-    </div>
-    <div class="section group">
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          5
-        </div>
-      </div>
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          8
-        </div>
-      </div>
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          13
-        </div>
-      </div>
-    </div>
-    <div class="section group">
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          21
-        </div>
-      </div>
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          ?
-        </div>
-      </div>
-      <div class="col span_1_of_3">
-        <div class="card_button">
-          Coffee
-        </div>
-      </div>
-    </div>
+    <x-single id="single" style="display:none;" onclick="swapView(9)">
+      <div class="space" id="choice">1</div>
+    </x-single>
+    <x-deck selected-index="0" id="menuBlock">
+      <x-card  onclick="swapView(0)">
+        <div class="space">1</div>
+      </x-card>
+      <x-card onclick="swapView(1)">
+        <div class="space">2</div>
+      </x-card>
+      <x-card onclick="swapView(2)">
+        <div class="space">3</div>
+      </x-card>
+      <x-card onclick="swapView(3)">
+        <div class="space">5</div>
+      </x-card>
+      <x-card onclick="swapView(4)">
+        <div class="space">8</div>
+      </x-card>
+      <x-card onclick="swapView(5)">
+        <div class="space">13</div>
+      </x-card>
+      <x-card onclick="swapView(6)">
+        <div class="space">21</div>
+      </x-card>
+      <x-card onclick="swapView(7)">
+        <div class="space">&#8734;</div>
+      </x-card>
+      <x-card onclick="swapView(8)">
+        <div class="space">?</div>
+      </x-card>
+    </x-deck>
   </body>
 </html>

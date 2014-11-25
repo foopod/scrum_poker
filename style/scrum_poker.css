@@ -1,82 +1,53 @@
-
-/*  SECTIONS  ============================================================================= */
-
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+@font-face {
+	font-family: 'Roboto Light';
+	src: url(fonts/Roboto-Light.ttf);
 }
 
-/*  GROUPING  ============================================================================= */
-
-
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-/*  GRID COLUMN SETUP   ==================================================================== */
-
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
-
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-/*  GRID OF THREE   ============================================================================= */
-
-	
-.span_3_of_3 {
-	width: 100%; 
-}
-
-.span_2_of_3 {
-	width: 66.13%; 
-}
-
-.span_1_of_3 {
-	width: 32.26%;
+body {
+	overflow: hidden;
+	color: #fff;
+	background: #2C2C2C;
+	font-family: 'Roboto Light', Helvetica, Arial, sans-serif;
+	font-size: 300%;
 }
 
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.span_3_of_3 {
-		width: 100%; 
-	}
-	.span_2_of_3 {
-		width: 100%; 
-	}
-	.span_1_of_3 {
-		width: 100%;
-	}
+x-card {
+  width: 100%;
 }
 
-/*  Buttons   ============================================================================= */
+x-card:nth-child(1), x-card:nth-child(2), x-card:nth-child(3), x-card:nth-child(4), x-card:nth-child(5), x-card:nth-child(6), x-card:nth-child(7), x-card:nth-child(8){
+  width: 18%;
+  float: left;
+  padding: 2rem;
+}
 
-	
-.card_button {
-	border: 2px solid;
+x-card:nth-child(9) {
+  width: 18%;
+  float: left;
+  height: 100%;
+  overflow: auto;
+  padding: 2rem;
+}
+
+x-single{
+  float: middle;
+  height: 100%;
+  overflow: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1000%;
+}
+
+x-deck {
+	height: 100%;
+}
+
+.space{
+	padding: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	border: 2px solid #dddddd;
     border-radius: 25px;
-    padding: 25px;
     text-align: center;
 }

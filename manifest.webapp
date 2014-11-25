@@ -1,14 +1,16 @@
 {
   "name": "Scrum Poker",
   "description": "Used in Sprint Planning to estimate time/complexity of a story or task.",
-  "launch_path": "/scrum_poker/index.html",
+  "launch_path": "/index.html",
   "developer": {
     "name": "Jonathon Shields",
     "url": "https://github.com/foopod"
   },
   "icons": {
-    "128": "assets/icons/icon128.png",
-    "64": "assets/icons/icon64.png"
+    "128": "/assets/icons/icon128.png",
+    "64": "/assets/icons/icon64.png",
+    "60": "/assets/icons/icon60.png",
+    "30": "/assets/icons/icon30.png"
   },
   "orientation": "portrait-primary"
 }
